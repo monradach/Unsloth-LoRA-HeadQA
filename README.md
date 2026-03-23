@@ -7,14 +7,23 @@ The project covers basic dataset preprocessing, chat-template formatting, respon
 ## Results
 This initial experiment was run on a small subset of **5,000 samples** to keep training lightweight.
 
-| Split | Size |
-|------|------|
-| Train | 4,000 |
-| Test  | 1,000 |
-
-| Metric   | Score  |
-|----------|--------|
-| Accuracy | 0.6340 |
+<table>
+  <tr>
+    <td valign="top">
+      <table>
+        <tr><th>Split</th><th>Size</th></tr>
+        <tr><td>Train</td><td>4,000</td></tr>
+        <tr><td>Test</td><td>1,000</td></tr>
+      </table>
+    </td>
+    <td valign="top">
+      <table>
+        <tr><th>Metric</th><th>Score</th></tr>
+        <tr><td>Accuracy</td><td>0.6340</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 ## Model
 The final model can be found on Hugging Face: https://huggingface.co/monradach/Llama-3.2-3B-Instruct-HeadQA
