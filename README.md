@@ -1,11 +1,16 @@
-**HEAD-QA Fine-Tuning with Llama 3.2**
+# HEAD-QA LoRA Fine-Tuning with Llama 3.2
 
-This repository is a small introductory project using Unsloth to fine-tune Llama 3.2 on the HEAD-QA medical multiple-choice QA dataset. For this purpose, only 5,000 samples were used across training and testing to keep the workflow lightweight and easy to run.
+This repository is a small introductory project showing how to use **Unsloth** to **LoRA fine-tune Llama 3.2** on the **HEAD-QA** medical multiple-choice QA dataset.
 
-The project covers basic dataset preprocessing, chat-template formatting, response-only supervised fine-tuning, and simple test-set evaluation with accuracy. Its goal is to provide a compact starting point for learning how to use Unsloth for medical QA fine-tuning.
+To keep the workflow lightweight and easy to run, the experiment uses **5,000 samples** in total, split into training and testing. The project demonstrates a simple end-to-end pipeline for:
+- preprocessing the dataset
+- formatting examples with a chat template
+- applying response-only supervised fine-tuning
+- evaluating performance with test accuracy
 
 ## Results
-This initial experiment was run on a small subset of **5,000 samples** to keep training lightweight.
+
+This experiment was run on a small subset of **5,000 samples**.
 
 <table>
   <tr>
@@ -25,5 +30,8 @@ This initial experiment was run on a small subset of **5,000 samples** to keep t
   </tr>
 </table>
 
+> **Note:** The reported result is not directly comparable to the official HEAD-QA baselines, since this project uses only a small unstratified subset rather than the benchmark’s original split.
+
 ## Model
-The final model can be found on Hugging Face: https://huggingface.co/monradach/Llama-3.2-3B-Instruct-HeadQA
+
+Available on Hugging Face: [monradach/Llama-3.2-3B-Instruct-HeadQA](https://huggingface.co/monradach/Llama-3.2-3B-Instruct-HeadQA)
